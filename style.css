@@ -1,0 +1,181 @@
+/**reset**/
+body,p,div,ul,li{margin:0; padding:0;}
+ul{list-style:none;}
+/**reset end**/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.hs {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 999999999;
+    background: url(http://www.gravatar.com/avatar/898c65e04cafd3f3a1d7f69be6921d49.png);
+    background-size: 50px;
+    border: 2px #ccc solid;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.section-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transition: transform 1s cubic-bezier(0.86,0,0.03,1);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.86,0,0.03,1);
+    -ms-transition: -ms-transform 1s cubic-bezier(0.86,0,0.03,1);
+    -moz-transition: -moz-transform 1s cubic-bezier(0.86,0,0.03,1);
+    -o-transition: -o-transform 1s cubic-bezier(0.86,0,0.03,1);
+}
+.section-wrap .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.section-wrap .section .title {
+    padding-top: 200px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+.section-wrap .section .title p {
+    opacity: 0;
+}
+.section-wrap .section .title .p-2 {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.section-wrap .section .title.active .p-1 {
+    opacity: 1;
+    transform: translateY(-25px);
+    -webkit-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    -moz-transform: translateY(-25px);
+    -o-transform: translateY(-25px);
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+}
+.section-wrap .section .title.active .p-2 {
+    opacity: 1;
+    transform: translateY(-25px);
+    -webkit-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    -moz-transform: translateY(-25px);
+    -o-transform: translateY(-25px);
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+}
+.section-wrap .section-1 {
+    background-color: #0066a5;
+}
+.section-wrap .section-2 {
+    background-color: #065E69;
+}
+.section-wrap .section-3 {
+    background-color: #0D2C7C;
+}
+.section-wrap .section-4 {
+    background-color: #0C6242;
+}
+.section-wrap .section-5 {
+    background-color: #413004;
+}
+.put-section-0 {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.put-section-1 {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+.put-section-2 {
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+}
+.put-section-3 {
+    transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -o-transform: translateY(-300%);
+}
+.put-section-4 {
+    transform: translateY(-400%);
+    -webkit-transform: translateY(-400%);
+    -ms-transform: translateY(-400%);
+    -moz-transform: translateY(-400%);
+    -o-transform: translateY(-400%);
+}
+.section-btn {
+    position: fixed;
+    right: 40px;
+    top: 40%;
+    width: 15px;
+}
+.section-btn li {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.section-btn li.cur {
+    background: Indigo;
+}
+.button {
+    font-size: 32px;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -98px;
+}
+.button-box {
+    background: #413004;
+    color: #ccc;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    transition:all 1s ease-out;
+    -webkit-transition: -webkit-box-shadow 0.5s ease-out;
+    -moz-transition: -moz-box-shadow 0.5s ease-out;
+    -o-transition: box-shadow 0.5s ease-out;
+}
+.button-box:hover {
+    box-shadow: 0 0 15px #0099ff;
+    -moz-box-shadow: 0 0 15px #0099ff;
+    -webkit-box-shadow: 0 0 15px #0099ff;
+}
+a:hover {
+    color: #0099ff;
+    text-decoration: none;
+}
