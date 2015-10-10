@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title><![CDATA[八云一家]]></title>
+    <link>http://keyfoxth.github.io/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    <description></description>
+    <pubDate>Sat, 10 Oct 2015 03:58:02 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title><![CDATA[Hello world, again.]]></title>
+      <link>http://keyfoxth.github.io/2015/10/10/hello-world-again/</link>
+      <guid>http://keyfoxth.github.io/2015/10/10/hello-world-again/</guid>
+      <pubDate>Sat, 10 Oct 2015 02:35:17 GMT</pubDate>
+      <description>
+      <![CDATA[<blockquote>
+<p>15-10-10 第 1 次更新</p>
+</blockquote>
+<h3 id="复活">复活</h3><p>锵锵锵锵~~今天（15-10-10），八云一家又重新建立起来了，鼓掌鼓掌。算是完全复活了呢，可喜可贺可喜可贺。不过并没有把之前的文章转移过来，毕竟都是些没有营养的水货，就算是一个新的开始。</p>
+<h3 id="详情">详情</h3><p>现在，就差域名跳转的部分没有完成，先记录下八云一家的详情：</p>
+<ul>
+<li>八云一家现在部署在 <a href="https://pages.github.com/">GitHub Pages</a>。</li>
+<li>抛弃了 <a href="https://wordpress.org/">WordPress</a>，转投 <a href="https://hexo.io/">Hexo</a> 的怀抱，使用的主题是 <a href="https://github.com/iissnan/hexo-theme-next">NexT</a>。同时，八云一家也支持 <a href="rss2.xml">RSS</a> 输出。</li>
+<li>用户评论系统使用的是 <a href="https://disqus.com/">Disqus</a>。</li>
+<li><a href="https://www.google.com/analytics/">Google Analytics</a> 已开启。</li>
+</ul>]]>
+      
+      </description>
+      <content:encoded><![CDATA[<blockquote>
+<p>15-10-10 第 1 次更新</p>
+</blockquote>
+<h3 id="复活">复活</h3><p>锵锵锵锵~~今天（15-10-10），八云一家又重新建立起来了，鼓掌鼓掌。算是完全复活了呢，可喜可贺可喜可贺。不过并没有把之前的文章转移过来，毕竟都是些没有营养的水货，就算是一个新的开始。</p>
+<h3 id="详情">详情</h3><p>现在，就差域名跳转的部分没有完成，先记录下八云一家的详情：</p>
+<ul>
+<li>八云一家现在部署在 <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>。</li>
+<li>抛弃了 <a href="https://wordpress.org/" target="_blank" rel="external">WordPress</a>，转投 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 的怀抱，使用的主题是 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>。同时，八云一家也支持 <a href="rss2.xml">RSS</a> 输出。</li>
+<li>用户评论系统使用的是 <a href="https://disqus.com/" target="_blank" rel="external">Disqus</a>。</li>
+<li><a href="https://www.google.com/analytics/" target="_blank" rel="external">Google Analytics</a> 已开启。</li>
+</ul>
+<a id="more"></a>
+<p>WordPress 确实非常强大，主题、插件都很完善，但是现在，我需要的仅仅个是支持 Markdown、可以生成静态网页的框架。同时，随着版本的不断升级，WordPress 自身也越来越重。各种各样的原因造就了现在的八云一家。</p>
+<h3 id="总结">总结</h3><p>虽然使用 Hexo 非常简单，但我还是几番波折，也许在日后会写篇文章。最后，同之前一样，请大家多多关照。</p>
+]]></content:encoded>
+      <comments>http://keyfoxth.github.io/2015/10/10/hello-world-again/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
