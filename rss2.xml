@@ -7,7 +7,7 @@
     <link>http://keyfoxth.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description></description>
-    <pubDate>Mon, 26 Oct 2015 08:09:17 GMT</pubDate>
+    <pubDate>Mon, 26 Oct 2015 08:13:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 23 Oct 2015 09:36:32 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
-<p>15-10-26 第 5 次更新</p>
+<p>15-10-26 第 6 次更新</p>
 </blockquote>
 <hr>
 <p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/circular-background-demo.html">DEMO</a>。</p>
@@ -50,7 +50,7 @@
       
       </description>
       <content:encoded><![CDATA[<blockquote>
-<p>15-10-26 第 5 次更新</p>
+<p>15-10-26 第 6 次更新</p>
 </blockquote>
 <hr>
 <p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/circular-background-demo.html">DEMO</a>。</p>
@@ -90,7 +90,7 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">40px</span></span></span>;  <span class="comment">/*IE6-8*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">5</span>vm</span></span>;   <span class="comment">/*IE9*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">5vmin</span></span></span>; <span class="comment">/*高级浏览器*/</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>想要了解更多的相关知识，可以阅读文章末尾的参考链接。</p>
 <hr>
-<h3 id="背景位置与大小">背景位置与大小</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"bg"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="背景设置">背景设置</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"bg"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.bg</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200vh</span></span></span>;                 <span class="comment">/* 为什么是 200？因为这里使用的图片大小为 2160*1080 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> ... </span></span>;       <span class="comment">/* 省略 background-image 属性 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">background-size</span>:<span class="value"> auto <span class="number">100%</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
 <p><code>position: fixed; top: 0; bottom: 0; left: 0;</code></p>
 <ol>
