@@ -7,7 +7,7 @@
     <link>http://keyfoxth.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description></description>
-    <pubDate>Sun, 25 Oct 2015 14:28:10 GMT</pubDate>
+    <pubDate>Mon, 26 Oct 2015 08:09:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -17,29 +17,30 @@
       <pubDate>Fri, 23 Oct 2015 09:36:32 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
-<p>15-10-25 第 4 次更新</p>
+<p>15-10-26 第 5 次更新</p>
 </blockquote>
 <hr>
 <p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/circular-background-demo.html">DEMO</a>。</p>
-<p>实现的方法其实很简单，但在此之前，先介绍一些新的 CSS 长度值单位。</p>
-<h3 id="vw、vh、nmin、vmax">vw、vh、nmin、vmax</h3><p>这些都是 CSS3 的新单位，在 W3C Editor’s Draft 中是这样定义的：</p>
+<p>实现的方法很简单，整个 HTML 文件就 2 个 div，<code>.bg</code> 承载背景，<code>.content</code> 承载文字内容。</p>
+<p>但在详细说明之前，先介绍点好玩的。</p>
+<h3 id="vw、vh、nmin、vmax">vw、vh、nmin、vmax</h3><p>以上都是 CSS3 中新加入的长度值单位，在 W3C Editor’s Draft 中，它们是这样被定义的：</p>
 <blockquote>
 <p><strong><em>vw unit</em></strong></p>
-<blockquote>
-<p>Equal to 1% of the width of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the width of the initial containing block.</li>
+</ul>
 <p><strong><em>vh unit</em></strong></p>
-<blockquote>
-<p> Equal to 1% of the height of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the height of the initial containing block.</li>
+</ul>
 <p><strong><em>vmin unit</em></strong></p>
-<blockquote>
-<p> Equal to 1% of the height of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the height of the initial containing block.</li>
+</ul>
 <p><strong><em>vmax unit</em></strong></p>
-<blockquote>
-<p> Equal to 1% of the height of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the height of the initial containing block.</li>
+</ul>
 <p>Note that the initial containing block’s size is affected by the presence of scrollbars on the viewport.</p>
 </blockquote>
 <p>即</p>
@@ -49,29 +50,30 @@
       
       </description>
       <content:encoded><![CDATA[<blockquote>
-<p>15-10-25 第 4 次更新</p>
+<p>15-10-26 第 5 次更新</p>
 </blockquote>
 <hr>
 <p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/circular-background-demo.html">DEMO</a>。</p>
-<p>实现的方法其实很简单，但在此之前，先介绍一些新的 CSS 长度值单位。</p>
-<h3 id="vw、vh、nmin、vmax">vw、vh、nmin、vmax</h3><p>这些都是 CSS3 的新单位，在 W3C Editor’s Draft 中是这样定义的：</p>
+<p>实现的方法很简单，整个 HTML 文件就 2 个 div，<code>.bg</code> 承载背景，<code>.content</code> 承载文字内容。</p>
+<p>但在详细说明之前，先介绍点好玩的。</p>
+<h3 id="vw、vh、nmin、vmax">vw、vh、nmin、vmax</h3><p>以上都是 CSS3 中新加入的长度值单位，在 W3C Editor’s Draft 中，它们是这样被定义的：</p>
 <blockquote>
 <p><strong><em>vw unit</em></strong></p>
-<blockquote>
-<p>Equal to 1% of the width of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the width of the initial containing block.</li>
+</ul>
 <p><strong><em>vh unit</em></strong></p>
-<blockquote>
-<p> Equal to 1% of the height of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the height of the initial containing block.</li>
+</ul>
 <p><strong><em>vmin unit</em></strong></p>
-<blockquote>
-<p> Equal to 1% of the height of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the height of the initial containing block.</li>
+</ul>
 <p><strong><em>vmax unit</em></strong></p>
-<blockquote>
-<p> Equal to 1% of the height of the initial containing block.</p>
-</blockquote>
+<ul>
+<li>Equal to 1% of the height of the initial containing block.</li>
+</ul>
 <p>Note that the initial containing block’s size is affected by the presence of scrollbars on the viewport.</p>
 </blockquote>
 <p>即</p>
@@ -79,25 +81,31 @@
 <p>1vw = 1% viewport width（视窗宽度）<br>1vh = 1% viewport height（视窗高度）<br>1vmin = 1vw or 1vh（取决于那个更小）<br>1vmax = 1vw or 1vh（取决于那个更大）</p>
 </blockquote>
 <a id="more"></a>
-<p>注意：这里的 <code>viewport width</code> 指的是 <code>window.innerWidth</code>，不是 <code>window.outerWidth</code> 或 <code>screen.width</code>，<code>viewport height</code> 同理。同时，<strong>IE9 下仅支持使用 <code>vm</code> 代替 <code>vmin</code></strong>。因此，可以这样用：</p>
+<p>注意：</p>
+<ol>
+<li>这里的 <code>viewport width</code> 指的是 <code>window.innerWidth</code>，不是 <code>window.outerWidth</code> 或 <code>screen.width</code>，<code>viewport height</code> 同理。</li>
+<li>IE9 下仅支持使用 <code>vm</code> 代替 <code>vmin</code>。</li>
+</ol>
+<p>因此，可以这样使用：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">40px</span></span></span>;  <span class="comment">/*IE6-8*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">5</span>vm</span></span>;   <span class="comment">/*IE9*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">5vmin</span></span></span>; <span class="comment">/*高级浏览器*/</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>想要了解更多的相关知识，可以阅读文章末尾的参考链接。</p>
 <hr>
-<h3 id="背景位置与大小">背景位置与大小</h3><p><code>&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;</code></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.bg</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200vh</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-size</span>:<span class="value"> auto <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="comment">/* 省略了 background-image 属性 */</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="背景位置与大小">背景位置与大小</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"bg"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.bg</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200vh</span></span></span>;                 <span class="comment">/* 为什么是 200？因为这里使用的图片大小为 2160*1080 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> ... </span></span>;       <span class="comment">/* 省略 background-image 属性 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">background-size</span>:<span class="value"> auto <span class="number">100%</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
 <p><code>position: fixed; top: 0; bottom: 0; left: 0;</code></p>
 <ol>
-<li>通过绝对定位确定高度</li>
-<li>让页面不显示滚动条</li>
+<li>通过绝对定位确定高度。</li>
+<li>隐藏滚动条。</li>
 </ol>
-<p><code>width: 200vh; background-size: auto 100%;</code>（这里使用的图片大小为 2160*1080）</p>
+<p><code>width: 200vh; background-size: auto 100%;</code></p>
 <ol>
-<li>固定背景图片的宽高比</li>
-<li>实现图片高度自适应</li>
-<li>背景在滚动时速度一定</li>
+<li>固定背景图片的宽高比。</li>
+<li>实现图片高度自适应。</li>
+<li>保证背景在滚动时速度一定。</li>
 </ol>
 <p>为什么不用 <code>width: 100%</code>，之后会说明。</p>
 <h3 id="无缝循环">无缝循环</h3><p>为了保证无缝循环，必须给 <code>&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;</code> 设置一个 <code>::after</code> 伪对象：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">.bg</span>:<span class="value">:after &#123;</span><br><span class="line">  width: <span class="number">200vh</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-size</span>:<span class="value"> auto <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">""</span></span></span>; <span class="comment">/* 伪对象必须定义 content 属性 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">100%</span></span></span>;  <span class="comment">/* 位置紧跟 &lt;div class="bg"&gt;&lt;/div&gt; */</span></span><br><span class="line">  <span class="comment">/* 省略了 background-image 属性 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">.bg</span>:<span class="value">:after &#123;</span><br><span class="line">  width: <span class="number">200vh</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> ... </span></span>;       <span class="comment">/* 省略 background-image 属性 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">background-size</span>:<span class="value"> auto <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">""</span></span></span>;                  <span class="comment">/* 伪对象必须定义 content 属性 */</span></span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">100%</span></span></span>;                   <span class="comment">/* 使位置紧跟 &lt;div class="bg"&gt;&lt;/div&gt; */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>至于怎么让页面滚动起来，直接给 <code>&lt;div class=&quot;bg&quot;&gt;&lt;/div&gt;</code> 写个 <code>animation</code> 就行了：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.bg</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-animation</span>:<span class="value"> slide <span class="number">30s</span> linear <span class="number">0s</span> infinite</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-animation</span>:<span class="value">    slide <span class="number">30s</span> linear <span class="number">0s</span> infinite</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-o-animation</span>:<span class="value">      slide <span class="number">30s</span> linear <span class="number">0s</span> infinite</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">animation</span>:<span class="value">         slide <span class="number">30s</span> linear <span class="number">0s</span> infinite</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="at_rule">@<span class="keyword">-webkit-keyframes</span> slide </span>&#123;</span><br><span class="line">  0%    <span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(<span class="number">0</span>)</span></span>; &#125;</span></span><br><span class="line">  100%	<span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">100%</span>)</span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="at_rule">@<span class="keyword">-moz-keyframes</span> slide </span>&#123;</span><br><span class="line">  0%    <span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(<span class="number">0</span>)</span></span>; &#125;</span></span><br><span class="line">  100%	<span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">100%</span>)</span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="at_rule">@<span class="keyword">-o-keyframes</span> slide </span>&#123;</span><br><span class="line">  0%    <span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(<span class="number">0</span>)</span></span>; &#125;</span></span><br><span class="line">  100%	<span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">100%</span>)</span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="at_rule">@<span class="keyword">keyframes</span> slide </span>&#123;</span><br><span class="line">  0%    <span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(<span class="number">0</span>)</span></span>; &#125;</span></span><br><span class="line">  100%	<span class="rules">&#123; <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">100%</span>)</span></span>; &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="内容居中">内容居中</h3><p><code>&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;</code></p>
@@ -105,17 +113,17 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.content</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">150px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> auto</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>里面的文字也要水平居中：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.content</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="其它效果">其它效果</h3><p>给文字来点阴影：</p>
+<h3 id="额外效果">额外效果</h3><p>给文字来点阴影：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.content</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-text-shadow</span>:<span class="value"> <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-text-shadow</span>:<span class="value">    <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-o-text-shadow</span>:<span class="value">      <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">text-shadow</span>:<span class="value">         <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>不能选中文本内容：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.content</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-user-select</span>:<span class="value"> none</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-user-select</span>:<span class="value">    none</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-o-user-select</span>:<span class="value">      none</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">user-select</span>:<span class="value">         none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="总结与不足">总结与不足</h3><p>为什么一直省略 <code>background-image</code> 属性？没错，这里使用了上篇文章介绍的 <strong>Data URIs</strong>，将图片进行 base64 编码后一共 8660 字节，通过把它写在 CSS 中实现复用，整个 HTML 则 11237 字节（10.9KB）。</p>
+<h3 id="总结与不足">总结与不足</h3><p>为什么一直省略 <code>background-image</code> 属性？没错，这里使用了上篇文章介绍的 <strong>Data URIs</strong>，将图片进行 base64 编码后一共 8660 字节，通过把它写在 CSS 中实现复用，整个 HTML（未经压缩）则 11330 字节（11.0KB）。</p>
 <p>当然，这里也还有不足之处。</p>
-<p>因为这里使用的图片大小是 2160*1080，当视窗宽高比大于 2:1（18:9）时，在背景滚动到 <code>.bg::after</code> 的最右边后将有一段 <code>window.innerWidth - window.innerHeight * 2</code> 的白边。</p>
+<p>因为这里使用的图片大小是 2160*1080，当视窗宽高比大于 2:1（18:9）时，在背景滚动到 <code>.bg::after</code> 的最右边后，将有一段 <code>window.innerWidth - window.innerHeight * 2</code> 的白边。</p>
 <p>解决办法有两个：</p>
 <ol>
 <li>使用宽高比更大的图片 : )</li>
-<li>将 <code>.bg, .bg::after</code> 中的 <code>width</code> 设置为 <code>200 * n（n 为大于1的整数）vh</code>，让 <code>background</code> 平铺过去。不能是其它数或直接使用 <code>width: 100%;</code>，因为这样会撕裂 <code>background</code>，不是无缝循环。</li>
+<li>将 <code>.bg, .bg::after</code> 中的 <code>width</code> 设置为 <code>200 * n（n 为大于1的整数）vh</code>，让 <code>background</code> 平铺过去。注意，不能是其它数或直接使用 <code>width: 100%;</code>，因为这样会撕裂 <code>background</code>，破坏循环。</li>
 </ol>
 <hr>
 <h3 id="参考链接">参考链接</h3><ol>
