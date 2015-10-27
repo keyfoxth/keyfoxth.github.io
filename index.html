@@ -341,7 +341,7 @@
       
         
           <blockquote>
-<p>15-10-26 第 4 次更新</p>
+<p>15-10-27 第 5 次更新</p>
 </blockquote>
 <hr>
 <h3 id="简介">简介</h3><p>data URIs 由 <a href="http://tools.ietf.org/html/rfc2397">RFC 2397</a> 定义，允许将一个小文件进行编码后嵌入到另外一个文档里。</p>
@@ -351,15 +351,13 @@
 <li><code>data:</code> 协议头，标识这是一个 data URI 资源。</li>
 <li><code>[&lt;media type&gt;]</code> 数据呈现的格式，例如 <code>image/gif</code> 代表 gif 图像文件，如果没有指定，默认是 <code>text/plain</code>。</li>
 <li><code>[;charset=&lt;character set&gt;]</code> 可选的字符集参数，如果没有指定，默认是 <code>US-ASCII</code>。</li>
-<li><code>[;base64]</code> 可选的数据编码方式，存在时，表示 <code>&lt;data&gt;</code> 是 base64 编码过的二进制数据。</li>
-<li><code>&lt;data&gt;</code> 实际的数据内容，八比特的字符序列。</li>
+<li><code>[;base64]</code> 可选的数据编码方式，存在时，表示 <code>&lt;data&gt;</code> 是 Base64 编码过的二进制数据。</li>
+<li><code>&lt;data&gt;</code> 实际的数据内容，8bit 的字符序列。</li>
 </ol>
-<h3 id="用法">用法</h3><p>在 HTML 中：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"data:image/gif;base64,XXXXX"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>在 CSS 中：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"data:image/gif;base64,XXXXX"</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>在 JavaScript 中：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.open(<span class="string">"data:text/html;charset=utf-8,"</span> +</span><br><span class="line">  <span class="built_in">encodeURIComponent</span>(</span><br><span class="line">    <span class="string">"&lt;!DOCTYPE html&gt;"</span>+</span><br><span class="line">    <span class="string">"&lt;html lang="</span>zh-CN<span class="string">"&gt;"</span>+</span><br><span class="line">    <span class="string">"&lt;head&gt;&lt;title&gt;Hello, world!&lt;/title&gt;&lt;/head&gt;"</span>+</span><br><span class="line">    <span class="string">"&lt;body&gt;&lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/body&gt;"</span>+</span><br><span class="line">    <span class="string">"&lt;/html&gt;"</span></span><br><span class="line">  )</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong><code>Base64</code></strong></p>
+<p>由 <a href="https://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a> 定义的二进制数据表示方法。<br>简单来说，就是将 3Byte 的数据，转换为 4 个 6bit 单元，每个单元都按照其值，选择 Base64 索引表中对应的字符作为编码后的输出。也就是说，3Byte 的数据经过 Base64 编码后，将增大到 4Byte。</p>
+</blockquote>
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/10/13/data-uris/#more" rel="contents">
               阅读全文 &raquo;
