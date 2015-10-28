@@ -352,11 +352,11 @@
 <li><code>[&lt;media type&gt;]</code> 数据呈现的格式，例如 <code>image/gif</code> 代表 gif 图像文件，如果没有指定，默认是 <code>text/plain</code>。</li>
 <li><code>[;charset=&lt;character set&gt;]</code> 可选的字符集参数，如果没有指定，默认是 <code>US-ASCII</code>。</li>
 <li><code>[;base64]</code> 可选的数据编码方式，存在时，表示 <code>&lt;data&gt;</code> 是 Base64 编码过的二进制数据。</li>
-<li><code>&lt;data&gt;</code> 实际的数据内容，8bit 的字符序列。</li>
+<li><code>&lt;data&gt;</code> 实际的数据内容，8 bit 的字符序列。</li>
 </ol>
 <blockquote>
 <p><strong><code>Base64</code></strong></p>
-<p>由 <a href="https://tools.ietf.org/html/rfc1421">RFC 1421</a>、<a href="https://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a> 定义的二进制数据编码方法。<br>简单来说，就是将 3Bytes 的数据，转换为 4 个 6bit 单元，每个单元都按照其值，选择 Base64 索引表中对应的字符作为编码后的输出。也就是说，3Bytes 的数据经过 Base64 编码后，将增大到 4Bytes。</p>
+<p>由 <a href="https://tools.ietf.org/html/rfc1421">RFC 1421</a>、<a href="https://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a> 定义的二进制数据编码方法。<br>简单来说，就是将 3 Bytes 的数据，转换为 4 个 6 bit 单元，每个单元都按照其值，选择 Base64 索引表中对应的字符作为编码后的输出。也就是说，3 Bytes 的数据经过 Base64 编码后，将增大到 4 Bytes。</p>
 </blockquote>
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/10/13/data-uris/#more" rel="contents">

@@ -63,7 +63,7 @@ vw、vh、nmin、vmax以上都是 CSS3 中新加入的长度值单位，在 W3C 
 vw unit
 
 Equal to 1% of">
-<meta property="og:updated_time" content="2015-10-28T08:55:56.289Z">
+<meta property="og:updated_time" content="2015-10-28T09:39:02.073Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个简洁的循环背景">
 <meta name="twitter:description" content="15-10-26 第 6 次更新
@@ -320,13 +320,13 @@ Equal to 1% of">
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.content</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-text-shadow</span>:<span class="value"> <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-text-shadow</span>:<span class="value">    <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-o-text-shadow</span>:<span class="value">      <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">text-shadow</span>:<span class="value">         <span class="number">3px</span> <span class="number">3px</span> <span class="number">6px</span> <span class="hexcolor">#CCC</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>不能选中文本内容：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.content</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-user-select</span>:<span class="value"> none</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-user-select</span>:<span class="value">    none</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-o-user-select</span>:<span class="value">      none</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">user-select</span>:<span class="value">         none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="总结与不足">总结与不足</h3><p>为什么一直省略 <code>background-image</code> 属性？没错，这里使用了上篇文章介绍的 <strong>Data URIs</strong>，将图片进行 base64 编码后一共 8660Bytes，通过把它写在 CSS 中实现复用，整个 HTML（未经压缩）则 11330Bytes（11.0KB）。</p>
+<h3 id="总结与不足">总结与不足</h3><p>为什么一直省略 <code>background-image</code> 属性？没错，这里使用了上篇文章介绍的 <strong>Data URIs</strong>，将图片进行 base64 编码后一共 8660 Bytes，通过把它写在 CSS 中实现复用，整个 HTML（未经压缩）则 11330 Bytes（11.0 KB）。</p>
 <p>当然，这里也还有不足之处。</p>
 <p>因为这里使用的图片大小是 2160*1080，当视窗宽高比大于 2:1（18:9）时，在背景滚动到 <code>.bg::after</code> 的最右边后，将有一段 <code>window.innerWidth - window.innerHeight * 2</code> 的白边。</p>
 <p>解决办法有两个：</p>
 <ol>
 <li>使用宽高比更大的图片 : )</li>
-<li>将 <code>.bg, .bg::after</code> 中的 <code>width</code> 设置为 <code>200 * n（n 为大于1的整数）vh</code>，让 <code>background</code> 平铺过去。注意，不能是其它数或直接使用 <code>width: 100%;</code>，因为这样会撕裂 <code>background</code>，破坏循环。</li>
+<li>将 <code>.bg</code>、<code>.bg::after</code> 的 <code>width</code> 设置为 <code>200 * n（n 为大于1的整数）vh</code>，让 <code>background</code> 平铺过去。注意，不能是其它数或直接使用 <code>width: 100%;</code>，因为这样会撕裂 <code>background</code>，破坏循环。</li>
 </ol>
 <hr>
 <h3 id="相关链接">相关链接</h3><ol>
