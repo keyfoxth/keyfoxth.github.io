@@ -7,14 +7,36 @@
     <link>http://keyfoxth.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description></description>
-    <pubDate>Wed, 28 Oct 2015 09:39:02 GMT</pubDate>
+    <pubDate>Sun, 06 Dec 2015 14:32:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title><![CDATA[機器學習基石]]></title>
+      <link>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</link>
+      <guid>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</guid>
+      <pubDate>Mon, 09 Nov 2015 15:23:10 GMT</pubDate>
+      <description>
+      <![CDATA[<blockquote>
+<p>15-12-06 第 2 次更新</p>
+</blockquote>
+<hr>
+<p>本文是 <a href="https://www.coursera.org/" target="_blank" rel="external">Coursera</]]>
+      </description>
+      <content:encoded><![CDATA[<blockquote>
+<p>15-12-06 第 2 次更新</p>
+</blockquote>
+<hr>
+<p>本文是 <a href="https://www.coursera.org/" target="_blank" rel="external">Coursera</a> 上的 <a href="https://www.coursera.org/course/ntumlone" target="_blank" rel="external">機器學習基石（Machine Learning Foundations）</a> 的学习笔记，课程由国立台湾大学的林軒田教授讲授。</p>
+<h3 id="第一講:_The_Learning_Problem">第一講: The Learning Problem</h3><h3 id="第二講:_Learning_to_Answer_Yes/No">第二講: Learning to Answer Yes/No</h3><h3 id="第三講:_Types_of_Learning">第三講: Types of Learning</h3><h3 id="第四講:_Feasibility_of_Learning">第四講: Feasibility of Learning</h3><p>（未完待续）</p>
+]]></content:encoded>
+      <comments>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/#disqus_thread</comments>
+    </item>
     
     <item>
       <title><![CDATA[一个简洁的循环背景]]></title>
       <link>http://keyfoxth.github.io/2015/10/23/circular-background/</link>
       <guid>http://keyfoxth.github.io/2015/10/23/circular-background/</guid>
-      <pubDate>Fri, 23 Oct 2015 09:36:32 GMT</pubDate>
+      <pubDate>Fri, 23 Oct 2015 10:36:32 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 6 次更新</p>
@@ -138,7 +160,7 @@
       <title><![CDATA[Data URIs 小试]]></title>
       <link>http://keyfoxth.github.io/2015/10/13/data-uris/</link>
       <guid>http://keyfoxth.github.io/2015/10/13/data-uris/</guid>
-      <pubDate>Mon, 12 Oct 2015 15:42:39 GMT</pubDate>
+      <pubDate>Mon, 12 Oct 2015 16:42:39 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-28 第 6 次更新</p>
@@ -218,7 +240,7 @@
       <title><![CDATA[Hello world, again.]]></title>
       <link>http://keyfoxth.github.io/2015/10/10/hello-world-again/</link>
       <guid>http://keyfoxth.github.io/2015/10/10/hello-world-again/</guid>
-      <pubDate>Sat, 10 Oct 2015 02:35:17 GMT</pubDate>
+      <pubDate>Sat, 10 Oct 2015 03:35:17 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 3 次更新</p>
