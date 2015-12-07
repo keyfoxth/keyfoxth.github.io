@@ -6,23 +6,82 @@
     <link rel="stylesheet" href="github.css">
     <style>
       .markdown-body {
-        max-width: 600px;
+        max-width: 900px;
+        min-width: 600px;
         margin: 20px auto;
+        padding: 20px;
       }
       .markdown-body h1 {
         text-align: center;
         border: 0;
       }
+      table {
+        border-collapse: separate;
+      }
+      td {
+        min-width: 150px;
+      }
+      .markdown-body table td {
+        border: 0;
+      }
     </style>
   </head>
   <body class="markdown-body">
-    <h1></h1>
-    <h2></h2>
-    <p><strong></strong></p>
-    <p><strong></strong></p>
-    <p><strong></strong></p>
-    <p><strong></strong></p>
-    <h2></h2>
+    <h1>简 历</h1>
+    <h2>个人信息</h2>
+    <p>
+      <strong>姓名：</strong>
+      王宇巍
+    </p>
+    <p>
+      <strong>学校专业：</strong>
+      广州中医药大学 -- 计算机科学（2011.09-2015.07）
+    </p>
+    <p>
+      <strong>联系电话：</strong>
+      188-2641-0989
+    </p>
+    <p>
+      <strong>Email：</strong>
+      <a href="mailto:keyfoxth-github@outlook.com">keyfoxth-github@outlook.com</a>
+    </p>
+    <p>
+      <strong>Github：</strong>
+      <a href="https://github.com/keyfoxth">https://github.com/keyfoxth</a>
+    </p>
+    <h2>就业经历</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>2015.07-至今</td>
+          <td>
+            <p><strong>广东广旭广告有限公司（前端工程师）</strong></p>
+            <p>负责公司绝大部分前端业务的编写与维护。</p>
+            <ul>
+              <li>重写了公司 OA 系统的前端部分，使用 <a href="https://github.com/mbostock/d3">D3.js</a> 对员工部分数据进行可视化处理，并专门制作了一个微信移动版，标题栏使用了 <a href="https://github.com/keyfoxth/title-bar">title-bar</a>。移动版整体正在使用 <a href="https://github.com/vuejs/vue">Vue.js</a> 重写中。</li>
+              <li>某停车场导航系统，实质是使用 <a href="https://github.com/vuejs/vue">Vue.js</a> 制作的 Web App，主要使用了它的 Data Binding 功能，通过两个二维码（车辆所停的区域与目前所在的区域）确定导航线路，并使用 <a href="http://projects.calebevans.me/jcanvas/">jCanvas</a> 将其在 Canvas 标签中绘制出来。</li>
+              <li>图片评分（未完）</li>
+              <li>移动活动（未完）</li>
+              <li>为公司业务制作各种宣传用的广告页面，主要使用 <a href="https://github.com/hakimel/reveal.js">reveal.js</a>、<a href="https://github.com/wagerfield/parallax">Parallax.js</a>、<a href="https://github.com/impress/impress.js">impress.js</a>、<a href="http://www.swiper.com.cn/">Swiper</a>，配合各种动画库，如<a href="https://github.com/daneden/animate.css/">Animate.css</a>、<a href="https://github.com/elrumordelaluz/csshake">Csshake</a>、<a href="https://github.com/ThrivingKings/animo.js/tree/master">animo.js</a>、<a href="https://github.com/visionmedia/move.js/">Move.js</a>。</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>2014.12-2015.04</td>
+          <td>
+            <p><strong>广州正易信息科技有限公司（前端工程师）</strong><p>
+            <p>负责公司快消品企业管理系统的桌面端和手机端，独立完成了内部邮件系统与任务管理系统。</p>
+            <ul>
+              <li>系统整体为 MVC 框架。</li>
+              <li>桌面端使用 ASP.NET 的 Razor 视图引擎。</li>
+              <li>手机端使用 <a href="http://phonegap.com/">PhonegGap</a> 制作 Hybrid App，将原生 API 进行封装，作为中间件暴露给 JavaScript，通过 Javascript 作为基本逻辑与中间件通讯，再由中间件访问底层 API。iOS 端调用 Safari 自带的 WebView，而 Android 端则内嵌了一个 webkit 内核。整体样式使用修改过的 <a href="https://github.com/twbs/bootstrap">Bootstrap</a> 第二版。</li>
+            </ul>
+            <p></p>
+            <p></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <p></p>
     <p></p>
     <p></p>
