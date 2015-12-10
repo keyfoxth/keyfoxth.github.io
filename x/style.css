@@ -1,0 +1,17 @@
+.markdown-body {
+  max-width: 900px;
+  min-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.markdown-body h1 {
+  text-align: center;
+  border: 0;
+}
+.markdown-body table {
+  border-collapse: separate;
+}
+.markdown-body table td {
+  border: 0;
+  min-width: 150px;
+}
