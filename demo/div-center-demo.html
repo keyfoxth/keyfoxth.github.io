@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DIV 垂直水平居中的几种方法</title>
+    <style>
+      html, body, div, figure, table, tbody, tr, td, pre, span {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        margin: 0 20px;
+      }
+      pre {
+        background: #ddd;
+      }
+      .method {
+        width: 300px;
+        height: 300px;
+        display: flex;
+      }
+      .code-box {
+        flex: 1;
+      }
+      .code {
+        height: 300px;
+      }
+      .father {
+        width: 300px;
+        height: 300px;
+        background: #bbb;
+      }
+      .son {
+        width: 100px;
+        height: 100px;
+        background: #999;
+      }
+      .father-1 {
+        position: relative;
+      }
+      .son-1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .father-2 {
+        position: relative;
+      }
+      .son-2 {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .father-3 {
+        display: flex;
+      }
+      .son-3 {
+        margin: auto;
+      }
+      .method::after {
+        position: absolute;
+        left: 0;
+        z-index: 10;
+      }
+      .method-1::after {
+        content: "class=\"father father-1\"";
+      }
+      .method-2::after {
+        content: "class=\"father father-2\"";
+      }
+      .method-3::after {
+        content: "class=\"father father-3\"";
+      }
+    </style>
+  </head>
+  <body>
+    <span>请使用 Chrome 查看</span>
+    <hr>
+    <div class="method method-1">
+      <div class="father father-1">
+        <div class="son son-1">class="son son-1"</div>
+      </div>
+      <div class="code-box">
+        <figure>
+          <table>
+            <tbody>
+              <tr>
+                <td class="code">
+                  <pre>
+<span>.son-1 {</span>
+<span>  position: absolute;</span>
+<span>  top: 50%;</span>
+<span>  left: 50%;</span>
+<span>  transform: translate(-50%, -50%);</span>
+<span>}</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </div>
+    </div>
+    <hr>
+    <div class="method method-2">
+      <div class="father father-2">
+        <div class="son son-2">class="son son-2"</div>
+      </div>
+      <div class="code-box">
+        <figure>
+          <table>
+            <tbody>
+              <tr>
+                <td class="code">
+                  <pre>
+<span>.son-2 {</span>
+<span>  position: absolute;</span>
+<span>  margin: auto;</span>
+<span>  top: 0;</span>
+<span>  bottom: 0;</span>
+<span>  left: 0;</span>
+<span>  right: 0;</span>
+<span>}</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </div>
+    </div>
+    <hr>
+    <div class="method method-3">
+      <div class="father father-3">
+        <div class="son son-3">class="son son-3"</div>
+      </div>
+      <div class="code-box">
+        <figure>
+          <table>
+            <tbody>
+              <tr>
+                <td class="code">
+                  <pre>
+<span>.father-3 {</span>
+<span>  display: flex;</span>
+<span>}</span>
+<span></span>
+<span>.son-3 {</span>
+<span>  margin: auto;</span>
+<span>}</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>
