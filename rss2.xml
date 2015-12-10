@@ -3,18 +3,18 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title><![CDATA[八云一家]]></title>
+    <title><![CDATA[高锰霜钾]]></title>
     <link>http://keyfoxth.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description></description>
-    <pubDate>Thu, 10 Dec 2015 07:36:46 GMT</pubDate>
+    <pubDate>Thu, 10 Dec 2015 14:13:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title><![CDATA[DIV 垂直水平居中的几种方法]]></title>
       <link>http://keyfoxth.github.io/2015/12/10/div-center/</link>
       <guid>http://keyfoxth.github.io/2015/12/10/div-center/</guid>
-      <pubDate>Thu, 10 Dec 2015 01:03:37 GMT</pubDate>
+      <pubDate>Thu, 10 Dec 2015 02:03:37 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-12-10 第 2 次更新</p>
@@ -52,7 +52,7 @@
       <title><![CDATA[機器學習基石]]></title>
       <link>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</link>
       <guid>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</guid>
-      <pubDate>Mon, 09 Nov 2015 14:23:10 GMT</pubDate>
+      <pubDate>Mon, 09 Nov 2015 15:23:10 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-12-06 第 2 次更新</p>
@@ -74,7 +74,7 @@
       <title><![CDATA[一个简洁的循环背景]]></title>
       <link>http://keyfoxth.github.io/2015/10/23/circular-background/</link>
       <guid>http://keyfoxth.github.io/2015/10/23/circular-background/</guid>
-      <pubDate>Fri, 23 Oct 2015 09:36:32 GMT</pubDate>
+      <pubDate>Fri, 23 Oct 2015 10:36:32 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 6 次更新</p>
@@ -198,7 +198,7 @@
       <title><![CDATA[Data URIs 小试]]></title>
       <link>http://keyfoxth.github.io/2015/10/13/data-uris/</link>
       <guid>http://keyfoxth.github.io/2015/10/13/data-uris/</guid>
-      <pubDate>Mon, 12 Oct 2015 15:42:39 GMT</pubDate>
+      <pubDate>Mon, 12 Oct 2015 16:42:39 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-28 第 6 次更新</p>
@@ -278,17 +278,17 @@
       <title><![CDATA[Hello world, again.]]></title>
       <link>http://keyfoxth.github.io/2015/10/10/hello-world-again/</link>
       <guid>http://keyfoxth.github.io/2015/10/10/hello-world-again/</guid>
-      <pubDate>Sat, 10 Oct 2015 02:35:17 GMT</pubDate>
+      <pubDate>Sat, 10 Oct 2015 03:35:17 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 3 次更新</p>
 </blockquote>
 <hr>
-<h3 id="复活">复活</h3><p>锵锵锵锵~~今天（15-10-10），八云一家又重新建立起来了，鼓掌鼓掌。算是完全复活了呢，可喜可贺可喜可贺。不过并没有把之前的文章转移过来，就当一个新的开始。</p>
-<h3 id="详情">详情</h3><p>记录目前八云一家的详情：</p>
+<h3 id="复活">复活</h3><p>锵锵锵锵~~今天（15-10-10），博客又重新建立起来了，鼓掌鼓掌。算是完全复活了呢，可喜可贺可喜可贺。不过并没有把之前的文章转移过来，就当一个新的开始。</p>
+<h3 id="详情">详情</h3><p>记录目前博客的详情：</p>
 <ul>
-<li>八云一家现在部署在 <a href="https://pages.github.com/">GitHub Pages</a>。</li>
-<li>抛弃了 <a href="https://wordpress.org/">WordPress</a>，转投 <a href="https://hexo.io/">Hexo</a> ，使用的主题是 <a href="https://github.com/iissnan/hexo-theme-next">NexT</a>。同时，八云一家也支持 <a href="rss2.xml">RSS</a> 输出。</li>
+<li>部署在 <a href="https://pages.github.com/">GitHub Pages</a>。</li>
+<li>抛弃了 <a href="https://wordpress.org/">WordPress</a>，转投 <a href="https://hexo.io/">Hexo</a> ，使用的主题是 <a href="https://github.com/iissnan/hexo-theme-next">NexT</a>。同时，也支持 <a href="rss2.xml">RSS</a> 输出。</li>
 <li>用户评论系统使用 <a href="https://disqus.com/">Disqus</a>。</li>
 <li><a href="https://www.google.com/analytics/">Google Analytics</a> 开启。</li>
 </ul>]]>
@@ -298,11 +298,11 @@
 <p>15-10-26 第 3 次更新</p>
 </blockquote>
 <hr>
-<h3 id="复活">复活</h3><p>锵锵锵锵~~今天（15-10-10），八云一家又重新建立起来了，鼓掌鼓掌。算是完全复活了呢，可喜可贺可喜可贺。不过并没有把之前的文章转移过来，就当一个新的开始。</p>
-<h3 id="详情">详情</h3><p>记录目前八云一家的详情：</p>
+<h3 id="复活">复活</h3><p>锵锵锵锵~~今天（15-10-10），博客又重新建立起来了，鼓掌鼓掌。算是完全复活了呢，可喜可贺可喜可贺。不过并没有把之前的文章转移过来，就当一个新的开始。</p>
+<h3 id="详情">详情</h3><p>记录目前博客的详情：</p>
 <ul>
-<li>八云一家现在部署在 <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>。</li>
-<li>抛弃了 <a href="https://wordpress.org/" target="_blank" rel="external">WordPress</a>，转投 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> ，使用的主题是 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>。同时，八云一家也支持 <a href="rss2.xml">RSS</a> 输出。</li>
+<li>部署在 <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>。</li>
+<li>抛弃了 <a href="https://wordpress.org/" target="_blank" rel="external">WordPress</a>，转投 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> ，使用的主题是 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>。同时，也支持 <a href="rss2.xml">RSS</a> 输出。</li>
 <li>用户评论系统使用 <a href="https://disqus.com/" target="_blank" rel="external">Disqus</a>。</li>
 <li><a href="https://www.google.com/analytics/" target="_blank" rel="external">Google Analytics</a> 开启。</li>
 </ul>
