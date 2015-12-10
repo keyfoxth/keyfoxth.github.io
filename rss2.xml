@@ -7,14 +7,52 @@
     <link>http://keyfoxth.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description></description>
-    <pubDate>Sun, 06 Dec 2015 14:32:07 GMT</pubDate>
+    <pubDate>Thu, 10 Dec 2015 07:36:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title><![CDATA[DIV 垂直水平居中的几种方法]]></title>
+      <link>http://keyfoxth.github.io/2015/12/10/div-center/</link>
+      <guid>http://keyfoxth.github.io/2015/12/10/div-center/</guid>
+      <pubDate>Thu, 10 Dec 2015 01:03:37 GMT</pubDate>
+      <description>
+      <![CDATA[<blockquote>
+<p>15-12-10 第 2 次更新</p>
+</blockquote>
+<hr>
+<p>直接上 <a href="//keyfoxth.github.io/demo/div-center-demo.html">DEMO</a>（请使用 Chrome 打开）。</p>
+<p>每个方法都使用如下格式的结构：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"method"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 父 DIV --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"father"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 子 DIV --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"son"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 代码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"code-box"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Method_1">Method 1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>这是我最常用以及最喜欢的方法，也有这样的变种：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 水平居中 */</span></span><br><span class="line"><span class="class">.horizontal-center</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 垂直居中 */</span></span><br><span class="line"><span class="class">.vertical-center</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateY</span>(-<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>]]>
+      
+      </description>
+      <content:encoded><![CDATA[<blockquote>
+<p>15-12-10 第 2 次更新</p>
+</blockquote>
+<hr>
+<p>直接上 <a href="//keyfoxth.github.io/demo/div-center-demo.html">DEMO</a>（请使用 Chrome 打开）。</p>
+<p>每个方法都使用如下格式的结构：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"method"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 父 DIV --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"father"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 子 DIV --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"son"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 代码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"code-box"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Method_1">Method 1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>这是我最常用以及最喜欢的方法，也有这样的变种：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 水平居中 */</span></span><br><span class="line"><span class="class">.horizontal-center</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 垂直居中 */</span></span><br><span class="line"><span class="class">.vertical-center</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateY</span>(-<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="Method_2">Method 2</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> auto</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>使用这种方法时，考虑到浏览器兼容性，需要设置 <code>display: table;</code> 或者 <code>display: inline-block;</code>。</p>
+<h3 id="Method_3">Method 3</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 父 DIV */</span></span><br><span class="line"><span class="class">.father</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> auto</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>这种方法使用 flexbox 布局，使用它不需要设置父 DIV 与子 DIV 的宽高值。</p>
+<h3 id="写在最后">写在最后</h3><p>以上三种方法都需要注意浏览器兼容性。</p>
+]]></content:encoded>
+      <comments>http://keyfoxth.github.io/2015/12/10/div-center/#disqus_thread</comments>
+    </item>
     
     <item>
       <title><![CDATA[機器學習基石]]></title>
       <link>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</link>
       <guid>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</guid>
-      <pubDate>Mon, 09 Nov 2015 15:23:10 GMT</pubDate>
+      <pubDate>Mon, 09 Nov 2015 14:23:10 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-12-06 第 2 次更新</p>
@@ -36,7 +74,7 @@
       <title><![CDATA[一个简洁的循环背景]]></title>
       <link>http://keyfoxth.github.io/2015/10/23/circular-background/</link>
       <guid>http://keyfoxth.github.io/2015/10/23/circular-background/</guid>
-      <pubDate>Fri, 23 Oct 2015 10:36:32 GMT</pubDate>
+      <pubDate>Fri, 23 Oct 2015 09:36:32 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 6 次更新</p>
@@ -160,7 +198,7 @@
       <title><![CDATA[Data URIs 小试]]></title>
       <link>http://keyfoxth.github.io/2015/10/13/data-uris/</link>
       <guid>http://keyfoxth.github.io/2015/10/13/data-uris/</guid>
-      <pubDate>Mon, 12 Oct 2015 16:42:39 GMT</pubDate>
+      <pubDate>Mon, 12 Oct 2015 15:42:39 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-28 第 6 次更新</p>
@@ -240,7 +278,7 @@
       <title><![CDATA[Hello world, again.]]></title>
       <link>http://keyfoxth.github.io/2015/10/10/hello-world-again/</link>
       <guid>http://keyfoxth.github.io/2015/10/10/hello-world-again/</guid>
-      <pubDate>Sat, 10 Oct 2015 03:35:17 GMT</pubDate>
+      <pubDate>Sat, 10 Oct 2015 02:35:17 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 3 次更新</p>

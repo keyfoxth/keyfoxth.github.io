@@ -169,6 +169,99 @@
           
           
             
+              <a class="post-title-link" href="/2015/12/10/div-center/" itemprop="url">
+                DIV 垂直水平居中的几种方法
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-12-10T10:03:37+09:00" content="2015-12-10">
+            2015-12-10
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Front-end/" itemprop="url" rel="index"><span itemprop="name">Front-end</span></a></span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/12/10/div-center/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/10/div-center/" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>15-12-10 第 2 次更新</p>
+</blockquote>
+<hr>
+<p>直接上 <a href="//keyfoxth.github.io/demo/div-center-demo.html">DEMO</a>（请使用 Chrome 打开）。</p>
+<p>每个方法都使用如下格式的结构：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"method"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 父 DIV --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"father"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 子 DIV --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"son"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 代码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"code-box"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Method_1">Method 1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>这是我最常用以及最喜欢的方法，也有这样的变种：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 水平居中 */</span></span><br><span class="line"><span class="class">.horizontal-center</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(-<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 垂直居中 */</span></span><br><span class="line"><span class="class">.vertical-center</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateY</span>(-<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/10/div-center/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/11/09/machine-learning-foundations/" itemprop="url">
                 機器學習基石
               </a>
@@ -180,7 +273,7 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-11-09T23:23:10+08:00" content="2015-11-09">
+          <time itemprop="dateCreated" datetime="2015-11-09T23:23:10+09:00" content="2015-11-09">
             2015-11-09
           </time>
         </span>
@@ -265,7 +358,7 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-10-23T18:36:32+08:00" content="2015-10-23">
+          <time itemprop="dateCreated" datetime="2015-10-23T18:36:32+09:00" content="2015-10-23">
             2015-10-23
           </time>
         </span>
@@ -379,7 +472,7 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-10-13T00:42:39+08:00" content="2015-10-13">
+          <time itemprop="dateCreated" datetime="2015-10-13T00:42:39+09:00" content="2015-10-13">
             2015-10-13
           </time>
         </span>
@@ -480,7 +573,7 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-10-10T11:35:17+08:00" content="2015-10-10">
+          <time itemprop="dateCreated" datetime="2015-10-10T11:35:17+09:00" content="2015-10-10">
             2015-10-10
           </time>
         </span>
@@ -588,7 +681,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -602,7 +695,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
