@@ -7,20 +7,20 @@
     <link>http://keyfoxth.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description></description>
-    <pubDate>Thu, 10 Dec 2015 14:13:17 GMT</pubDate>
+    <pubDate>Thu, 17 Dec 2015 09:35:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title><![CDATA[DIV 垂直水平居中的几种方法]]></title>
       <link>http://keyfoxth.github.io/2015/12/10/div-center/</link>
       <guid>http://keyfoxth.github.io/2015/12/10/div-center/</guid>
-      <pubDate>Thu, 10 Dec 2015 02:03:37 GMT</pubDate>
+      <pubDate>Thu, 10 Dec 2015 01:03:37 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-12-10 第 2 次更新</p>
 </blockquote>
 <hr>
-<p>直接上 <a href="//keyfoxth.github.io/demo/div-center-demo.html">DEMO</a>（请使用 Chrome 打开）。</p>
+<p>直接上 <a href="//keyfoxth.github.io/demo/div-center.html">DEMO</a>（请使用 Chrome 打开）。</p>
 <p>每个方法都使用如下格式的结构：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"method"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 父 DIV --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"father"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 子 DIV --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"son"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 代码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"code-box"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="Method_1">Method 1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
@@ -32,7 +32,7 @@
 <p>15-12-10 第 2 次更新</p>
 </blockquote>
 <hr>
-<p>直接上 <a href="//keyfoxth.github.io/demo/div-center-demo.html">DEMO</a>（请使用 Chrome 打开）。</p>
+<p>直接上 <a href="//keyfoxth.github.io/demo/div-center.html">DEMO</a>（请使用 Chrome 打开）。</p>
 <p>每个方法都使用如下格式的结构：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"method"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 父 DIV --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"father"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 子 DIV --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"son"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 代码 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"code-box"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="Method_1">Method 1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 子 DIV */</span></span><br><span class="line"><span class="class">.son</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
@@ -52,7 +52,7 @@
       <title><![CDATA[機器學習基石]]></title>
       <link>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</link>
       <guid>http://keyfoxth.github.io/2015/11/09/machine-learning-foundations/</guid>
-      <pubDate>Mon, 09 Nov 2015 15:23:10 GMT</pubDate>
+      <pubDate>Mon, 09 Nov 2015 14:23:10 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-12-06 第 2 次更新</p>
@@ -72,15 +72,15 @@
     
     <item>
       <title><![CDATA[一个简洁的循环背景]]></title>
-      <link>http://keyfoxth.github.io/2015/10/23/circular-background/</link>
-      <guid>http://keyfoxth.github.io/2015/10/23/circular-background/</guid>
-      <pubDate>Fri, 23 Oct 2015 10:36:32 GMT</pubDate>
+      <link>http://keyfoxth.github.io/2015/10/23/loop-background/</link>
+      <guid>http://keyfoxth.github.io/2015/10/23/loop-background/</guid>
+      <pubDate>Fri, 23 Oct 2015 09:36:32 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 6 次更新</p>
 </blockquote>
 <hr>
-<p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/circular-background-demo.html">DEMO</a>。</p>
+<p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/loop-background.html">DEMO</a>。</p>
 <p>实现的方法很简单，整个 HTML 文件就 2 个 div，<code>.bg</code> 承载背景，<code>.content</code> 承载文字内容。</p>
 <p>但在详细说明之前，先介绍点好玩的。</p>
 <h3 id="vw、vh、nmin、vmax">vw、vh、nmin、vmax</h3><p>以上都是 CSS3 中新加入的长度值单位，在 W3C Editor’s Draft 中，它们是这样被定义的：</p>
@@ -113,7 +113,7 @@
 <p>15-10-26 第 6 次更新</p>
 </blockquote>
 <hr>
-<p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/circular-background-demo.html">DEMO</a>。</p>
+<p>不多说，直接上 <a href="http://keyfoxth.github.io/demo/loop-background.html">DEMO</a>。</p>
 <p>实现的方法很简单，整个 HTML 文件就 2 个 div，<code>.bg</code> 承载背景，<code>.content</code> 承载文字内容。</p>
 <p>但在详细说明之前，先介绍点好玩的。</p>
 <h3 id="vw、vh、nmin、vmax">vw、vh、nmin、vmax</h3><p>以上都是 CSS3 中新加入的长度值单位，在 W3C Editor’s Draft 中，它们是这样被定义的：</p>
@@ -191,14 +191,14 @@
 <li><a href="https://css-tricks.com/viewport-sized-typography/" target="_blank" rel="external">Viewport Sized Typography | CSS-Tricks</a></li>
 </ol>
 ]]></content:encoded>
-      <comments>http://keyfoxth.github.io/2015/10/23/circular-background/#disqus_thread</comments>
+      <comments>http://keyfoxth.github.io/2015/10/23/loop-background/#disqus_thread</comments>
     </item>
     
     <item>
       <title><![CDATA[Data URIs 小试]]></title>
       <link>http://keyfoxth.github.io/2015/10/13/data-uris/</link>
       <guid>http://keyfoxth.github.io/2015/10/13/data-uris/</guid>
-      <pubDate>Mon, 12 Oct 2015 16:42:39 GMT</pubDate>
+      <pubDate>Mon, 12 Oct 2015 15:42:39 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-28 第 6 次更新</p>
@@ -278,7 +278,7 @@
       <title><![CDATA[Hello world, again.]]></title>
       <link>http://keyfoxth.github.io/2015/10/10/hello-world-again/</link>
       <guid>http://keyfoxth.github.io/2015/10/10/hello-world-again/</guid>
-      <pubDate>Sat, 10 Oct 2015 03:35:17 GMT</pubDate>
+      <pubDate>Sat, 10 Oct 2015 02:35:17 GMT</pubDate>
       <description>
       <![CDATA[<blockquote>
 <p>15-10-26 第 3 次更新</p>
